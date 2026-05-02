@@ -22,11 +22,18 @@ export function TitleRoePortfolio() {
   return (
     <div className="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.92),_rgba(245,230,231,0.95)_42%,_rgba(244,234,228,1)_100%)] text-[#2c2c2c]">
       <nav className="sticky top-0 z-30 border-b border-[#ead9cf]/80 bg-white/80 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-[18px] md:px-12 lg:px-20">
+        <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-4 px-6 py-[18px] md:px-12 lg:px-20">
           <div className="flex items-center gap-4">
-            <span className="font-skin-serif text-[24px] tracking-[0] text-[#2c2c2c]">TitleRoe</span>
+            <a href="https://onroe.space/titleroe" className="font-skin-serif text-[24px] tracking-[0] text-[#2c2c2c] transition-colors hover:text-[#934b66]">
+              ← TitleRoe
+            </a>
             <span className="h-4 w-px bg-[#ead9cf]" />
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#a48777]">Portfolio</span>
+          </div>
+          <div className="flex items-center gap-2 text-sm font-bold text-[#6d5c58]">
+            <a href="https://onroe.space/titleroe" className="rounded-full border border-[#d9b8a6] bg-[#f4e3df] px-4 py-2 text-[#8f695d] transition-colors hover:bg-[#ead2cc]">
+              돌아가기
+            </a>
           </div>
         </div>
       </nav>
