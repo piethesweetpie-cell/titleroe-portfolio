@@ -1,0 +1,20 @@
+
+> titleroe-portfolio@0.1.0 predev
+> node -e "require('fs').rmSync('.next',{recursive:true,force:true})"
+
+
+> titleroe-portfolio@0.1.0 dev
+> next dev -p 3002
+
+   ▲ Next.js 15.5.14
+   - Local:        http://localhost:3002
+   - Network:      http://192.168.219.130:3002
+
+ ✓ Starting...
+ ✓ Ready in 1104ms
+ ○ Compiling /titleroe/portfolio ...
+ ✓ Compiled /titleroe/portfolio in 3.2s (598 modules)
+ GET / 200 in 3835ms
+ GET /titleroe/portfolio 200 in 3783ms
+ GET / 200 in 285ms
+ GET /titleroe/portfolio 200 in 250ms
