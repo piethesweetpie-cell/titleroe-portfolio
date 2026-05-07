@@ -21,11 +21,12 @@ export function TitleRoePortfolio() {
 
   return (
     <div className="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.92),_rgba(245,230,231,0.95)_42%,_rgba(244,234,228,1)_100%)] text-[#2c2c2c]">
-      <nav className="sticky top-0 z-30 border-b border-[#ead9cf]/80 bg-white/80 backdrop-blur-xl">
+      <nav className="border-b border-[#ead9cf]/80 bg-white/80 backdrop-blur-xl">
         <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-4 px-6 py-[18px] md:px-12 lg:px-20">
           <div className="flex items-center gap-4">
             <a href="https://onroe.space/titleroe" className="font-skin-serif text-[24px] tracking-[0] text-[#2c2c2c] transition-colors hover:text-[#934b66]">
-              ← TitleRoe
+              <span className="hidden md:inline">← </span>
+              TitleRoe
             </a>
             <span className="h-4 w-px bg-[#ead9cf]" />
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#a48777]">Portfolio</span>
@@ -38,12 +39,12 @@ export function TitleRoePortfolio() {
         </div>
       </nav>
 
-      <section className="relative mx-auto max-w-5xl overflow-hidden px-6 pb-12 pt-0 md:px-12 lg:px-20">
+      <section className="relative mx-auto max-w-5xl overflow-hidden px-6 pb-8 pt-0 md:px-12 lg:px-20">
         <div className="absolute -right-12 -top-24 -z-10 h-64 w-64 rounded-full bg-[#e9d4cf]/60 blur-3xl" />
         <div className="flex items-center justify-between gap-8">
           <div className="min-w-0 flex-1">
             <div className="mb-3 mt-[10px] flex items-center gap-4">
-              <span className="rounded-full border border-[#ead9cf] bg-[#f7ede7] px-3 py-1 text-xs font-bold uppercase tracking-[0.2em] text-[#9b7b68]">
+              <span className="translate-y-[5px] rounded-full border border-[#ead9cf] bg-[#f7ede7] px-3 py-1 text-xs font-bold uppercase tracking-[0.2em] text-[#9b7b68]">
                 AI Webnovel Cover
               </span>
             </div>
@@ -60,7 +61,6 @@ export function TitleRoePortfolio() {
             <div className="mt-8 flex flex-wrap gap-6">
               <Stat num={String(styles.length)} label="Styles" />
               <Stat num={String(items.length)} label="Images" />
-              <Stat num="AI" label="Generated" />
             </div>
           </div>
 
@@ -85,7 +85,7 @@ export function TitleRoePortfolio() {
         </div>
       </section>
 
-      <div className="sticky top-[73px] z-20 border-b border-[#ead9cf]/80 bg-[#fbf4f0]/92 backdrop-blur-xl md:top-[61px]">
+      <div className="border-b border-[#ead9cf]/80 bg-[#fbf4f0]/92 backdrop-blur-xl">
         <div className="mx-auto max-w-5xl px-6 md:px-12 lg:px-20">
           <div className="flex flex-wrap items-center gap-1 py-3">
             {activeStyles.map((entry) => {
